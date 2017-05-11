@@ -1,0 +1,18 @@
+// Fluxys custom bootstrap v4.0.0-alpha.5
+// ---
+// 1. Tools: mixins and helpers
+// 2. Variables: theme colors and global settings
+// 3. Icon sets
+
+// 1. Tools
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/variables";
+@import "sass/_tools/tools.mixins";
+
+// 2. Variables
+@import "sass/_variables/_variables.core.scss";
+
+// 3. Icon sets
+// @import "sass/_tools/tools.icons";
+@import "sass/_tools/tools.ionicons";
+// @import "sass/_tools/tools.socicon";

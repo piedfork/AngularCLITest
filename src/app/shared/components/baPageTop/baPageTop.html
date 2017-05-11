@@ -1,0 +1,24 @@
+<div class="c-ui c-ui--top">
+  <div class="c-ui__item">
+    <!-- Sidebar-toggle -->
+    <a href (click)="toggleMenu()" class="c-nav-toggle">
+      <span class="ion-navicon"></span>
+      <span class="sr-only">Toggle menu</span>
+    </a>
+  </div>
+  <div class="c-ui__item c-ui__item--right">
+    <form class="form-inline c-calendar-holder">
+      <div class="input-group c-calendar">
+        <input class="form-control c-calendar__field" placeholder="yyyy-mm-dd"
+              name="dp" [ngModel]="selectedGasDay" (ngModelChange)="changeGasDay($event)" ngbDatepicker #d="ngbDatepicker">
+        <span class="input-group-btn c-calendar__btn-holder">
+          <button class="btn btn-link c-calendar__btn" type="button"  (click)="d.toggle()">
+            <i class="ion-android-calendar" ng-click="startSearch()"></i>
+            <span class="sr-only">Calendar</span>
+          </button>
+        </span>
+      </div>
+    </form>
+    <ba-msg-center></ba-msg-center>
+  </div>
+</div>

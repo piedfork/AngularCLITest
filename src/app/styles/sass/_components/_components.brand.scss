@@ -1,0 +1,39 @@
+// Brand
+.c-brand {
+  display: block;
+  padding: $spacer;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+  .c-brand__symbol {
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-image: url('#{$assets-root}img/brand/fluxys-symbol.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: $global-transition;
+
+    .menu-collapsed & {
+      height: 40px;
+    }
+  }
+
+  .c-brand__type {
+    display: block;
+    font-size: $font-size-h6;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    padding: $spacer/2;
+
+    .menu-collapsed & {
+      display: none;
+    }
+  }

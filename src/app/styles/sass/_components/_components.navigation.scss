@@ -1,0 +1,161 @@
+// Navigation
+.c-nav-main {
+  width: 100%;
+}
+
+.c-nav-main-list {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  list-style: none;
+}
+
+.c-nav-main-list--sublist {
+  display: none;
+
+  // Expanded
+  &.expanded {
+    display: block;
+  }
+
+  // Collapsed
+  .menu-collapsed & {
+    display: none !important;
+  }
+}
+
+  .c-nav-main-list__item {
+    position: relative;
+    padding: 0;
+    border-top: 1px solid rgba($gray,.1);
+
+    // Expanded
+    &.ba-sidebar-item-expanded {
+      b {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .c-nav-main-list__link {
+    display: block;
+    padding: $spacer/1.5 $spacer;
+    text-shadow: none;
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    color: rgba($white,.9);
+
+    i {
+      margin-right: $spacer/2;
+      width: 16px;
+      display: inline-block;
+    }
+
+    b {
+      display: block;
+      opacity: 1;
+      width: 14px;
+      height: 14px;
+      line-height: 14px;
+      text-shadow: none;
+      font-size: 18px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      padding: 0;
+      text-align: center;
+      color: $white;
+      transition: transform .2s linear;
+    }
+
+    &:hover,
+    &:focus {
+      color: rgba($white,.8);
+      text-decoration: none;
+
+      b {
+        color: rgba($white,.8);
+      }
+    }
+
+    .c-nav-main-list--sublist & {
+      font-size: 13px;
+      color: rgba($white,.7);
+      padding-left: $spacer*2.5;
+      padding: $spacer/2 $spacer $spacer/2 $spacer*2.5;
+      font-weight: $font-light;
+      border-top: 1px dotted rgba($gray,.1);
+    }
+
+    // Collapsed
+    .menu-collapsed & {
+      b,
+      span {
+        display: none;
+      }
+
+      i {
+        width: 28px;
+        text-align: center;
+        font-size: 16px;
+      }
+    }
+
+    // Active
+    .selected & {
+      background-color: rgba($gray,.2);
+    }
+  }
+
+// Hover element
+.c-nav-main-hover {
+  width: $sidebar-scroll-width;
+  background: $brand-primary;
+  position: absolute;
+  top: -150px;
+  left: $sidebar-width - $sidebar-scroll-width;
+  transition: all .5s ease;
+  transition-property: top, height;
+  height: 42px;
+  display: block;
+}
+
+// Navigation toggle
+.c-nav-toggle {
+  display: block;
+  font-size: 44px;
+  height: 39px;
+  line-height: 39px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: $global-transition;
+  margin-right: $spacer;
+  padding-right: $spacer;
+
+  .ion-navicon:before {
+    position: relative;
+    // transform: rotate(90deg);
+    transition: $global-transition;
+    line-height: 39px;
+  }
+
+  &,
+  &:visited,
+  &:focus {
+    color: $gray-dark;
+  }
+
+  &:hover {
+    color: tint($gray-dark,20);
+  }
+
+  .menu-collapsed & {
+    .ion-navicon:before {
+      // transform: rotate(0);
+    }
+  }
+}

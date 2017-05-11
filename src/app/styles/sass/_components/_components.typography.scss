@@ -1,0 +1,25 @@
+// Typography
+
+// Demo hover style
+.c-hovered {
+  a {
+    color: $link-hover-color;
+  }
+}
+
+// Text colors
+.c-color-primary {
+  color: $brand-primary;
+}
+
+.c-color-secondary {
+  color: $brand-secondary;
+}
+
+.c-color-warning {
+  color: $brand-warning;
+}
+
+.c-color-danger {
+  color: $brand-danger;
+}

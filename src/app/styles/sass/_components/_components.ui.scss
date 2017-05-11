@@ -1,0 +1,120 @@
+// UI
+
+.c-ui {
+  position: fixed;
+  transition: width $global-transition, left $global-transition;
+}
+
+  .c-ui__footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .c-ui__item {
+
+  }
+
+  .c-ui__item--primary {
+    flex-grow: 1;
+  }
+
+  .c-ui__item--right {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+  }
+
+// Left sidebar
+.c-ui--left {
+  top: 0;
+  left: 0;
+  width: $sidebar-width;
+  min-height: 100%;
+  height: 100%;
+  background-color: $sidebar-bg;
+  border-right: 1px solid shade($gray-dark,15);
+
+  // Collapsed menu width > hide on default
+  .menu-collapsed & {
+    width: 0;
+    border-right: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    // Collapsed menu width > small on medium
+    .menu-collapsed & {
+      width: $sidebar-width-collapsed;
+    }
+  }
+}
+
+// Top and bottom bar
+.c-ui--top {
+  z-index: $zindex-navbar-fixed;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  height: $sidebar-width-collapsed;
+  left: $sidebar-width;
+  right: -$sidebar-width;
+  width: 100%;
+  background-color: $white;
+  border-bottom: 1px solid $gray-lighter;
+  padding: $spacer;
+
+  .menu-collapsed & {
+    left: 0;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    width: calc(100% - #{$sidebar-width});
+
+    .menu-collapsed & {
+      left: $sidebar-width-collapsed;
+      width: calc(100% -  #{$sidebar-width-collapsed});
+    }
+  }
+}
+
+// Main container
+.c-ui--main {
+  position: absolute;
+  top: $sidebar-width-collapsed;
+  left: $sidebar-width;
+  right: -$sidebar-width;
+  width: 100%;
+  height: calc(100% - #{$sidebar-width-collapsed});
+  background-color: $gray-lightest;
+  overflow: auto;
+  padding: $spacer;
+
+  .menu-collapsed & {
+    left: 0;
+    right: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: $spacer $spacer*2;
+    width: calc(100% - #{$sidebar-width});
+
+    .menu-collapsed & {
+      left: $sidebar-width-collapsed;
+      width: calc(100% -  #{$sidebar-width-collapsed});
+    }
+  }
+}

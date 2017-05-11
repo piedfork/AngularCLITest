@@ -1,0 +1,35 @@
+// Breadcrumb
+.c-breadcrumb {
+  padding: 0;
+  background-color: transparent;
+  margin-bottom: $spacer;
+  border-radius: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+  .c-breadcrumb__item {
+    font-size: 14px;
+    &.active {
+      text-transform: uppercase;
+      font-weight: $font-bold;
+      color: $gray-dark;
+    }
+
+    a {
+      &,
+      &:visited {
+        color: tint($gray-dark,20);
+      }
+
+      &:hover,
+      &:focus {
+        color: tint($gray-dark,40);
+      }
+    }
+  }

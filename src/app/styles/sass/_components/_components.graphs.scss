@@ -1,0 +1,119 @@
+.c-graph {
+  height: 300px;
+}
+
+// SVG styling
+.c-label {
+  font-size: 14px;
+  font-weight: $font-light;
+  text-transform: uppercase;
+  stroke: none;
+}
+
+.c-label--neutral {
+  fill: tint($gray-dark,20);
+}
+
+.c-label--negative {
+  fill: $white;
+}
+
+.line {
+  line {
+    stroke-dasharray: 2,2,2;
+  }
+}
+
+
+// @TODO: refactor with namespace
+.legend {
+  font-size: 14px;
+  fill: tint($gray-dark,20);
+  font-weight: $font-light;
+}
+
+.axis {
+  text {
+    fill: tint($gray-dark,50);
+    font-size: 12px;
+    font-weight: $font-light;
+  }
+
+  line,
+  path {
+    stroke: tint($gray-dark,50);
+  }
+}
+
+.axis text.axis-label {
+  font-weight: $font-bold;
+  text-transform: uppercase;
+}
+
+.y.axis {
+  line,
+  path {
+    stroke-dasharray: 2,2,2;
+  }
+}
+
+.y.axis path.domain,
+.x.axis path.domain {
+  stroke: tint($gray-dark,50);
+  stroke-dasharray: 0 !important;
+}
+
+// SVG colors & styles
+.c-fill-one {
+  fill: $graph-color-one;
+  stroke: $graph-color-one;
+}
+
+.c-fill-two {
+  fill: $graph-color-two;
+  stroke: $graph-color-two;
+}
+
+.c-fill-three {
+  fill: $graph-color-three;
+  stroke: $graph-color-three;
+}
+
+.c-fill-four {
+  fill: $graph-color-four;
+  stroke: $graph-color-four;
+}
+
+.c-fill-five {
+  fill: $graph-color-five;
+  stroke: $graph-color-five;
+}
+
+.c-fill-six {
+  fill: $graph-color-six;
+  stroke: $graph-color-six;
+}
+
+.c-fill-seven {
+  fill: $graph-color-seven;
+  stroke: $graph-color-seven;
+}
+
+.c-fill-eight {
+  fill: $graph-color-eight;
+  stroke: $graph-color-eight;
+}
+
+.c-fill-nine {
+  fill: $graph-color-nine;
+  stroke: $graph-color-nine;
+}
+
+.c-fill-ten {
+  fill: $graph-color-ten;
+  stroke: $graph-color-ten;
+}
+
+.c-stroke-dotted {
+  stroke-dasharray: 2,2,2;
+}

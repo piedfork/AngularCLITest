@@ -1,0 +1,98 @@
+// Cards
+.c-card {
+  @include scrollbars(.5em, $gray-lighter, rgba(0, 0, 0, 0));
+  position: relative;
+  height: 100%;
+  margin-left: $grid-gutter-width-base/2;
+  margin-right: $grid-gutter-width-base/2;
+  overflow: auto;
+  margin-bottom: 0;
+
+  &.animated {
+    animation-duration: .5s;
+  }
+
+  &.viewport100 {
+    height: calc(100vh - 218px);
+  }
+
+  &.with-scroll {
+    .card-body {
+      overflow-y: auto;
+    }
+  }
+}
+
+// Card heights
+.c-card--small {
+  min-height: $card-height-small;
+}
+
+.c-card--xsmall {
+  min-height: $card-height-xsmall;
+}
+
+.c-card--medium {
+  min-height: $card-height-medium;
+}
+
+.c-card--large {
+  min-height: $card-height-large;
+}
+
+.c-card--huge {
+  min-height: $card-height-huge;
+}
+
+// Card modifiers
+.c-card--blur {
+  $blurredBgUrl: $images-root + 'blur-bg-blurred.jpg';
+  background: url($blurredBgUrl);
+  transition: none;
+  background-attachment: fixed;
+
+  .card-header, .card-footer {
+    background: transparent;
+  }
+}
+
+// Card colors
+.c-card--primary {
+  > .card-header {
+    background-color: $brand-primary-lighter;
+    border-color: $brand-primary-lighter;
+  }
+}
+
+.c-card--success {
+  > .card-header {
+    background-color: $brand-success-lighter;
+    border-color: $brand-success-lighter;
+  }
+}
+
+.c-card--info {
+  > .card-header {
+    background-color: $brand-info-lighter;
+    border-color: $brand-info-lighter;
+  }
+}
+
+.c-card--warning {
+  > .card-header {
+    background-color: $brand-warning-lighter;
+    border-color: $brand-warning-lighter;
+  }
+}
+
+.c-card--danger {
+  > .card-header {
+    background-color: $brand-danger-lighter;
+    border-color: $brand-danger-lighter;
+  }
+}
+
+  .c-card__container {
+    height: $card-overflow-height;
+    overflow-y: scroll;
+  }

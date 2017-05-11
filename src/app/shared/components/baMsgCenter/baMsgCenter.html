@@ -1,0 +1,50 @@
+<div class="c-notifications">
+  <div class="btn-group c-notifications__item" dropdown>
+    <button class="dropdown-toggle c-notifications__link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dropdownToggle addToggleClass="true">
+      <i class="fa fa-bell-o"></i>
+      <span class="c-notifications__badge">5</span>
+      <span class="c-notifications__ring"></span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" dropdownMenu>
+      <a class="dropdown-item" href="#">Mark All as Read</a>
+      <a class="dropdown-item" href="#">Settings</a>
+      <div class="dropdown-divider"></div>
+      <a href class="dropdown-item"><i class="fa fa-power-off"></i> Sign out</a>
+      <a *ngFor="let msg of notifications" href class="dropdown-item">
+        <div class="img-area">
+          <img [ngClass]="{'photo-msg-item': !msg.image}"
+                                   src="{{ ( msg.image ||  (msg.name | baProfilePicture)) }}"></div>
+        <div class="msg-area">
+          <div>{{ msg.text }}</div>
+          <span>{{ msg.time }}</span>
+        </div>
+      </a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">See all notifications</a>
+    </div>
+  </div>
+  <!-- <div class="btn-group c-notifications__item" dropdown>
+    <button class="dropdown-toggle c-notifications__link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dropdownToggle addToggleClass="true">
+      <i class="fa fa-envelope-o"></i>
+      <span class="c-notifications__badge">5</span>
+      <span class="c-notifications__ring"></span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" dropdownMenu>
+      <a class="dropdown-item" href="#">Mark All as Read</a>
+      <a class="dropdown-item" href="#">Settings</a>
+      <div class="dropdown-divider"></div>
+      <a href class="dropdown-item"><i class="fa fa-power-off"></i> Sign out</a>
+      <a *ngFor="let msg of notifications" href class="dropdown-item">
+        <div class="img-area">
+          <img [ngClass]="{'photo-msg-item': !msg.image}"
+                                   src="{{ ( msg.image ||  (msg.name | baProfilePicture)) }}"></div>
+        <div class="msg-area">
+          <div>{{ msg.text }}</div>
+          <span>{{ msg.time }}</span>
+        </div>
+      </a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">See all notifications</a>
+    </div>
+  </div> -->
+</div>

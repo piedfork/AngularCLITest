@@ -1,0 +1,33 @@
+// Login page
+
+.c-auth-main {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: $gray-lightest;
+}
+
+.c-auth-block {
+  width: 540px;
+  margin: 0 auto;
+}
+
+// Links
+.c-auth-link {
+  font-size: 14px;
+  text-align: right;
+  margin-left: $spacer;
+
+  &,
+  &:visited {
+    color: shade($gray,20);
+    text-decoration: underline;
+  }
+
+  &:hover,
+  &:focus {
+    color: $gray;
+  }
+}

@@ -1,0 +1,49 @@
+.nav-tab-holder {
+  position: relative;
+}
+
+.nav-tabs {
+  background-color: lighten($gray-lightest,3);
+
+  .nav-item + .nav-item {
+    margin-left: 0;
+  }
+
+  .nav-item {
+    border-right: 1px solid $gray-lighter;
+  }
+
+  .nav-link,
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link.active {
+    border: 0;
+    font-size: 14px;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+  }
+
+  .nav-link,
+  .nav-link:visited {
+    color: $gray-dark;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: tint($gray-dark,10);
+  }
+
+  .nav-link.active,
+  .nav-link.active:hover,
+  .nav-link.active:focus {
+    color: $brand-secondary-light;
+  }
+}
+
+.nav-tab-status {
+  position: absolute;
+  top: $spacer/4;
+  right: $spacer/2;
+  color: tint($gray-dark,30);
+  font-weight: $font-light;
+}

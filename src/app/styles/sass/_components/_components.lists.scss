@@ -1,0 +1,21 @@
+.c-list-responsive {
+  margin-top: $spacer/2;
+
+  @include media-breakpoint-up(md) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    li {
+      display: block;
+    }
+
+    li + li {
+      margin-left: $spacer/2;
+      padding-left: $spacer/2;
+      border-left: 1px dotted shade($gray-lighter,20);
+    }
+  }
+}

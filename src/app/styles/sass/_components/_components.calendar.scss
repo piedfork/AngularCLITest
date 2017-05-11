@@ -1,0 +1,95 @@
+// Calendar
+
+.c-calendar-holder {
+  min-width: 250px;
+
+  @include media-breakpoint-up(md) {
+    border-right: 1px dotted $gray-light;
+  }
+}
+
+.c-calendar.c-calendar {
+  padding-left: $spacer;
+  padding-top: $spacer/8;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    padding-right: $spacer;
+    width: 100%;
+  }
+}
+
+  .c-calendar__field {
+    color: $gray;
+    box-shadow: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    width: 200px;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: $font-light;
+
+    &:focus {
+      box-shadow: none;
+      border-bottom: 1px solid $gray;
+      background-color: transparent;
+    }
+
+    &::placeholder {
+      font-weight: $font-light;
+    }
+  }
+
+  .c-calendar__btn-holder {
+    width: 20px;
+  }
+
+  .c-calendar__btn {
+    padding: $spacer/4 0 $spacer/4 $spacer/4;
+    font-size: 24px;
+
+    i {
+      position: relative;
+      top: -2px;
+    }
+
+    &,
+    &:visited {
+      color: $gray-dark;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: tint($gray-dark,20);
+      outline: none;
+    }
+  }
+
+// Dropdown scoped styling
+.c-calendar > .dropdown-menu {
+  position: absolute;
+  min-width: 280px;
+  margin-top: $spacer/2;
+  left: -$spacer*4 !important;
+  background-color: $gray-lightest;
+
+  table {
+    width: 100%;
+  }
+
+  .day > div {
+    border-radius: 0;
+  }
+
+  .btn-secondary {
+    color: $gray-dark;
+    background-color: $white;
+  }
+
+  @include media-breakpoint-up(sm) {
+    left: $spacer/2 !important;
+  }
+}

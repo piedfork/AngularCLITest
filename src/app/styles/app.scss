@@ -1,0 +1,88 @@
+// Fluxys custom bootstrap v4.0.0-alpha.5
+// ---
+// 1. Tools & variables: mixins and global variables
+// 2. Core: basic html styling
+// 3. Components
+// 4. Plugins
+// 5. Utilities: helper classes
+
+
+// 1. Tools
+@import "variables";
+@import "~bootstrap/scss/variables";
+
+// 2. Core
+@import "~bootstrap/scss/normalize";
+@import "~bootstrap/scss/print";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+
+@import '~angular2-toaster/toaster';
+
+// 3. Components
+// Bootstrap components
+@import "~bootstrap/scss/animation";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/tags";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/responsive-embed";
+@import "~bootstrap/scss/close";
+// Bootstrap Components w/ JavaScript
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+// Select2
+@import "~select2/src/scss/core";
+// Boostrap overrides
+@import 'sass/_overrides/overrides.typography';
+@import "sass/_overrides/overrides.buttons";
+@import 'sass/_overrides/overrides.table';
+@import 'sass/_overrides/overrides.tabs';
+@import 'sass/_overrides/overrides.forms';
+@import "sass/_overrides/overrides.jumbotron";
+
+// Custom components
+@import "sass/_components/components.loader"; // Loading animation
+@import "sass/_components/components.brand"; // Brand elements
+@import 'sass/_components/components.typography'; // Global typography
+@import "sass/_components/components.layout"; // Global layout
+@import "sass/_components/components.ui"; // Global user interface
+@import "sass/_components/components.navigation"; // Global navigation
+@import "sass/_components/components.calendar"; // Calendar field
+@import "sass/_components/components.user"; // User dropdown
+@import "sass/_components/components.notifications"; // Notifications dropdown
+@import "sass/_components/components.breadcrumb"; // Page breadcrumbs
+@import "sass/_components/components.card"; // Card dimensions and scroll
+@import "sass/_components/components.graphs"; // D3 styles
+@import "sass/_components/components.lists"; // Custom lists
+@import "sass/_components/components.auth"; // Login screens
+
+// 4. Plugins
+@import "~animate.css/animate"; // Animate.css library
+@import "sass/_plugins/plugins.smarttable"; // Smart table
+@import "sass/_plugins/plugins.select2"; // Select2
+
+// 5. Utilities
+@import "~bootstrap/scss/utilities"; // Bootstrap utilities
+@import "sass/_utilities/utilities.colors"; // Global color utilities
+@import "sass/_utilities/utilities.divider"; // Global divider utilities
+@import "sass/_utilities/utilities.spacing"; // Extra spacing utilities

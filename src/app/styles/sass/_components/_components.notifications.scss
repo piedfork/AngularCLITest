@@ -1,0 +1,95 @@
+// Notifications
+.c-notifications {
+  display: inline-block;
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: $spacer*1.5;
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+
+  .c-notifications__item {
+    display: inline-block;
+    margin-right: $spacer;
+  }
+
+  .c-notifications__link {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    position: relative;
+
+    .fa {
+      font-size: 21px;
+      line-height: 1.5;
+    }
+
+    &:after {
+      display: none;
+      position: relative;
+      top: -2px;
+      margin-left: 1px;
+    }
+
+    &,
+    &:visited {
+      color: tint($gray-dark,20);
+    }
+
+    &:hover,
+    &:focus {
+      color: tint($gray-dark,40);
+      text-decoration: none;
+    }
+  }
+
+  .c-notifications__badge {
+    display: block;
+    position: absolute;
+    top: -.35em;
+    left: -.7em;
+    background-color: $brand-primary;
+    color: $white;
+    border-radius: 100%;
+    font-size: 11px;
+    line-height: 19px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+
+    .c-notifications__link:hover & {
+      background-color: $brand-primary-light;
+    }
+  }
+
+  .c-notifications__ring {
+    position: absolute;
+    top: -.25em;
+    left: -.3em;
+    border: 1px solid $brand-primary;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    animation: pulsate 8s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+  }
+
+// Animation
+@-webkit-keyframes pulsate {
+  30% {
+    -webkit-transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,22 @@
+// User
+
+.c-user {
+  display: block;
+}
+
+  .c-user__toggle  {
+    display: block;
+    border: 1px solid $gray-lighter;
+    background-color: $gray-lightest;
+    border-radius: 3px;
+    padding: 0;
+    padding-right: $spacer/2;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    > img {
+      width: 40px;
+      height: 40px;
+      border-right: 1px dotted $gray-lighter;
+    }
+  }

@@ -1,0 +1,30 @@
+// Typography tweaks
+
+// Add light font weight utility
+.font-weight-light {
+  font-weight: $font-light;
+}
+
+// Override link styling
+a {
+  transition: $global-transition;
+
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-weight: $font-bold;
+}
+
+.c-small {
+  font-size: 13px;
+}
+
+.c-neutral {
+  color: tint($gray-dark,30);
+}

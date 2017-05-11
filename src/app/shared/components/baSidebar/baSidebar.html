@@ -1,0 +1,11 @@
+<aside class="c-ui c-ui--left" sidebarResize>
+  <!-- Logo -->
+  <a routerLink="/pages/dashboard" class="c-brand">
+    <span class="c-brand__symbol"></span>
+    <span class="c-brand__type">GSmart Portal</span>
+  </a>
+
+  <ba-menu [menuHeight]="menuHeight"
+           [sidebarCollapsed]="isMenuCollapsed"
+           (expandMenu)="menuExpand()"></ba-menu>
+</aside>

@@ -1,0 +1,13 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib/",
+
+  "files.exclude": {
+      "**/.git": true,
+      "dist": true,
+      "dll": true
+    },
+
+    "vsicons.presets.angular": true,
+
+    "typescript.referencesCodeLens.enabled": true
+}
