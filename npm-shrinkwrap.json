@@ -1,0 +1,138 @@
+{
+  "name": "billit",
+  "version": "0.0.0",
+  "dependencies": {
+    "@angular/common": {
+      "version": "4.1.2",
+      "from": "@angular/common@>=4.0.0 <5.0.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/@angular/common/-/common-4.1.2.tgz"
+    },
+    "@angular/compiler": {
+      "version": "4.1.2",
+      "from": "@angular/compiler@>=4.0.0 <5.0.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/@angular/compiler/-/compiler-4.1.2.tgz"
+    },
+    "@angular/core": {
+      "version": "4.1.2",
+      "from": "@angular/core@>=4.0.0 <5.0.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/@angular/core/-/core-4.1.2.tgz"
+    },
+    "@angular/forms": {
+      "version": "4.1.2",
+      "from": "@angular/forms@>=4.0.0 <5.0.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/@angular/forms/-/forms-4.1.2.tgz"
+    },
+    "@angular/http": {
+      "version": "4.1.2",
+      "from": "@angular/http@>=4.0.0 <5.0.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/@angular/http/-/http-4.1.2.tgz"
+    },
+    "@angular/platform-browser": {
+      "version": "4.1.2",
+      "from": "@angular/platform-browser@>=4.0.0 <5.0.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/@angular/platform-browser/-/platform-browser-4.1.2.tgz"
+    },
+    "@angular/platform-browser-dynamic": {
+      "version": "4.1.2",
+      "from": "@angular/platform-browser-dynamic@>=4.0.0 <5.0.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/@angular/platform-browser-dynamic/-/platform-browser-dynamic-4.1.2.tgz"
+    },
+    "@angular/router": {
+      "version": "4.1.2",
+      "from": "@angular/router@>=4.0.0 <5.0.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/@angular/router/-/router-4.1.2.tgz"
+    },
+    "@ng-bootstrap/ng-bootstrap": {
+      "version": "1.0.0-alpha.25",
+      "from": "@ng-bootstrap/ng-bootstrap@>=1.0.0-alpha.25 <2.0.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-1.0.0-alpha.25.tgz"
+    },
+    "@types/jquery": {
+      "version": "2.0.43",
+      "from": "@types/jquery@*",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/@types/jquery/-/jquery-2.0.43.tgz"
+    },
+    "@types/jquery.slimscroll": {
+      "version": "1.3.30",
+      "from": "@types/jquery.slimscroll@>=1.3.30 <2.0.0",
+      "resolved": "https://registry.npmjs.org/@types/jquery.slimscroll/-/jquery.slimscroll-1.3.30.tgz"
+    },
+    "almond": {
+      "version": "0.3.3",
+      "from": "almond@>=0.3.1 <0.4.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/almond/-/almond-0.3.3.tgz"
+    },
+    "angular2-toaster": {
+      "version": "3.0.1",
+      "from": "angular2-toaster@>=3.0.1 <4.0.0",
+      "resolved": "https://registry.npmjs.org/angular2-toaster/-/angular2-toaster-3.0.1.tgz"
+    },
+    "animate.css": {
+      "version": "3.5.2",
+      "from": "animate.css@>=3.5.2 <4.0.0",
+      "resolved": "https://registry.npmjs.org/animate.css/-/animate.css-3.5.2.tgz"
+    },
+    "bootstrap": {
+      "version": "4.0.0-alpha.5",
+      "from": "bootstrap@4.0.0-alpha.5",
+      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.0.0-alpha.5.tgz",
+      "dependencies": {
+        "jquery": {
+          "version": "3.2.1",
+          "from": "jquery@>=1.9.1 <4.0.0",
+          "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/jquery/-/jquery-3.2.1.tgz"
+        }
+      }
+    },
+    "core-js": {
+      "version": "2.4.1",
+      "from": "core-js@>=2.4.1 <3.0.0",
+      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+    },
+    "ionicons": {
+      "version": "3.0.0",
+      "from": "ionicons@>=3.0.0 <4.0.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/ionicons/-/ionicons-3.0.0.tgz"
+    },
+    "jquery": {
+      "version": "2.2.4",
+      "from": "jquery@>=2.2.4 <3.0.0",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-2.2.4.tgz"
+    },
+    "jquery-mousewheel": {
+      "version": "3.1.13",
+      "from": "jquery-mousewheel@>=3.1.13 <3.2.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/jquery-mousewheel/-/jquery-mousewheel-3.1.13.tgz"
+    },
+    "jquery-slimscroll": {
+      "version": "1.3.8",
+      "from": "jquery-slimscroll@>=1.3.8 <2.0.0",
+      "resolved": "https://registry.npmjs.org/jquery-slimscroll/-/jquery-slimscroll-1.3.8.tgz"
+    },
+    "rxjs": {
+      "version": "5.4.0",
+      "from": "rxjs@>=5.1.0 <6.0.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/rxjs/-/rxjs-5.4.0.tgz"
+    },
+    "select2": {
+      "version": "4.0.3",
+      "from": "select2@>=4.0.3 <5.0.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/select2/-/select2-4.0.3.tgz"
+    },
+    "symbol-observable": {
+      "version": "1.0.4",
+      "from": "symbol-observable@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/symbol-observable/-/symbol-observable-1.0.4.tgz"
+    },
+    "tether": {
+      "version": "1.4.0",
+      "from": "tether@>=1.3.7 <2.0.0",
+      "resolved": "https://registry.npmjs.org/tether/-/tether-1.4.0.tgz"
+    },
+    "zone.js": {
+      "version": "0.8.10",
+      "from": "zone.js@>=0.8.4 <0.9.0",
+      "resolved": "https://rmpackprd01.central.fluxys.int/npm/publicnpm/zone.js/-/zone.js-0.8.10.tgz"
+    }
+  }
+}
